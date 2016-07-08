@@ -47,16 +47,16 @@ app.controller("AuthCtrl", function($scope, Auth, $location){
 			if (error) {
 	 			switch (error.code) {
 					case "EMAIL_TAKEN":
-						console.log("The new user account cannot be created because the email is already in use.");
+						console.log("无法创建新的用户帐户，因为电子邮件已经在使用中了.");
 						break;
 					case "INVALID_EMAIL":
-						console.log("The specified email is not a valid email.");
+						console.log("指定的电子邮件不是一个有效的电子邮件.");
 						break;
 					default:
-						console.log("Error creating user:", error);
+						console.log("错误创建用户:", error);
 				}
 			} else {
-				console.log("Successfully created user account with uid:", userData.uid);
+				console.log("成功创建用户帐户UID:", userData.uid);
 			}
 		});
 	}
