@@ -1,4 +1,4 @@
-Angular + Firebase + OAuth
+Angular + Firebase + OAuth 角+火力数据+第三方登陆(谷歌,github,脸谱等)
 --------------------------
 
 
